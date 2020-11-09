@@ -1,0 +1,46 @@
+@CHARSET "ISO-8859-1";
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+
+
+.bottom-right {
+  position: absolute;
+  bottom: 50%;
+  right: 8%;
+}
+
+.centered {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.centered1 {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.blink-two {
+        animation: blinker-two 4s linear infinite;
+      }
+      @keyframes blinker-two {
+        50% {
+          opacity: 0;
+        }

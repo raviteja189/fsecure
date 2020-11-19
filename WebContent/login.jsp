@@ -26,14 +26,15 @@
        
         
           <form onsubmit="return validate()" action="Login" method="post">
-            <h2 class="sr-only">Login Form</h2>
+            <h2 class="sr-only">Login </h2>
             <div class="illustration"><i class="icon ion-ios-locked-outline"></i></div>
             <div class="form-group"><input class="form-control" type="email" name="email" id="email" placeholder="Enter your e-mail" autofocus>
-            <span style="color:red" id="emailerror">* required</span>
+            <span style="color:yellow" id="emailerror"></span>
             </div>
             <div class="form-group"><input class="form-control" type="password" name="password" id="password" placeholder="Enter your password">
-            <span style="color:red" id="passerror">* required</span>
+            <span style="color:yellow" id="passerror"></span>
             </div>
+            <span style="color:red" id="passerror">All fields are required</span>
             <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Log In</button></div><a href="#" class="forgot">Forgot your email or password?</a>
             </form>
     </div>

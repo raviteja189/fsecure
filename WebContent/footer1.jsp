@@ -22,7 +22,6 @@
 </head>
 <body>
 <div class="footer">
-<a class="special"><span style="color:darkgreen;font-size:30px">FSecure<span><span style="color:lightgreen;font-size:30px"> solutions</span></a>
 <p>Contact us :fsecure.solutions999@gmail.com</p>
 <p>&copy; Copyright 2020 fsecure.com
 </p>

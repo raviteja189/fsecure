@@ -1,46 +1,53 @@
 @CHARSET "ISO-8859-1";
-.container {
+ .container {
   position: relative;
   text-align: center;
   color: white;
 }
 
+/* Bottom left text */
 .bottom-left {
   position: absolute;
   bottom: 8px;
   left: 16px;
 }
 
+/* Top left text */
 .top-left {
   position: absolute;
-  top: 30%;
+  top: 10%;
   left: 10%;
 }
-
-
-
-.bottom-right {
-  position: absolute;
-  bottom: 50%;
-  right: 8%;
-}
-
-.centered {
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.centered1 {
+.top-left1 {
   position: absolute;
   top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 10%;
 }
+.bottom-right1 {
+  position: absolute;
+  bottom:20%;
+  right: 15%;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom:65%;
+  right: 15%;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  
+}
+
 .blink-two {
-        animation: blinker-two 4s linear infinite;
+        animation: blinker-two 1.4s linear infinite;
       }
       @keyframes blinker-two {
-        50% {
+        100% {
           opacity: 0;
         }

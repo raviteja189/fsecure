@@ -46,7 +46,7 @@ color:white;
       
       <div style="padding-left:30px;padding-top:15px" >
       <p>1.fsecure solutions focuses on security of files</p>
-	  <p>2.Security is crucial to us. Everything we do with fsecure solutions 
+	  <p>2.Security is crucial to us. Everything you do with fsecure solutions 
 			  is done with security as the highest priority.We make sure that no one ever gets access to your encrypted files, as long as you have control of your own password.</p>
 			  
 	  <p>3.The project is developed using JAVA programming language</p>
@@ -75,7 +75,6 @@ color:white;
   		 
 			
 <div class="footer">
-<a class="special"><span style="color:darkgreen;font-size:30px">FSecure<span><span style="color:lightgreen;font-size:30px"> solutions</span></a>
 <p class="p">Contact us :fsecure.solutions999@gmail.com</p>
 <p class="p">&copy; Copyright 2020 fsecure.com
 </p>

@@ -17,6 +17,7 @@ import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
@@ -39,7 +40,7 @@ public class AesEncryption extends HttpServlet {
 		String email=(String) session.getAttribute("user");
 //		PrintWriter p=response.getWriter();
 //        p.print(key+" "+location);
-		String data="<p>File you have encrypted : </p>"+fileName+"<h2>Your key is :</h2>"+key+"<p>the file is in this location :</p>"+location;
+		String data="File you have encrypted : "+fileName+"<br>Your key is :"+key+"<br>the file is in this location in your pc/laptop: "+location;
 		String from="fsecure.solutions999@gmail.com";
         final String username="fsecure.solutions999@gmail.com";
         final String password="fsecure$1234$";
@@ -92,16 +93,17 @@ public class AesEncryption extends HttpServlet {
         Encrypt e=new Encrypt();
         if(e.insert(email, key, fileName,location))
         {
-//          String message = "Your file has been encrypted successfully!";
-//          PrintWriter out=response.getWriter();
-//          out.println("<script language=\"javascript\">");
-//          out.println("alert(" + message + ")");
-//          out.println("</script>");
-//
-//          
-//          response.sendRedirect("aesencryption.jsp");
-        	PrintWriter p=response.getWriter();
-            p.print("yes");
+        	PrintWriter out=response.getWriter();
+        	out.println("<script src='https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.4/sweetalert2.all.js'></script>");
+			out.println("<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>");
+            out.println("<script>");
+            out.println("$(document).ready(function(){");
+            out.println("swal ( 'Encrypted' ,  'successfully!' ,  'success' )");
+            
+        	out.println("});");
+            out.println("</script>");
+            RequestDispatcher rd=request.getRequestDispatcher("startpage.jsp");
+            rd.include(request,response);
         }
         
 	}
@@ -132,7 +134,7 @@ public class AesEncryption extends HttpServlet {
 		catch(Exception e)
 		{
 			 PrintWriter p=response.getWriter();
-			 p.println("check youre key or your file location");
+			 p.println("check your key or your file location");
 			 
 		}
 		

@@ -13,22 +13,28 @@
      response.setHeader("Cache-Control", "no-cache,no-store,must-revalidate");//1.1 http
      %>
    <%@include file="startheader.jsp" %>
-    <div class="container">
-  		<img style="margin:0"src="security.jpg" width="1519px" height="600px">
- 		
-  		<div class="top-left">
-			<h2 style="color:green;text-align:left">Strong encryption</h2>
-				File security with 128-bit AES or 64-bit Des <br>encryption.
-		</div>
-  		
-  		<div class="bottom-right">
-  		    <h2 style="color:green;text-align:left">Instant mailService</h2>
-               send your files with your mailId to anyone <br>and decrypt your files from where you are.  </div>
-  		<div class="centered"><h1>Advanced encryption is a<br> simply superbly setting</h1></div>
-  		<div class="centered1">
-			<h2 style="color:green;text-align:left">Collaboration</h2>
-			 Allow secured files to be opened by other users with your key. </div>
-		</div>   
+     <div class="container">
+				  <img  style="margin:0"src="security.jpg" width="1519px" height="700px">
+				  
+				  <div class="top-left">
+						<h2 style="color:green;text-align:left">Strong encryption</h2>
+							File security with 128-bit AES or 64-bit DES <br>encryption.
+				  </div>
+				  
+				  <div class="bottom-right">
+  		    		<h2 style="color:green;text-align:left">Instant mailService</h2>
+             			   send your Encrypted files to anyone.  
+                  </div>  
+                  <div class="bottom-right1">
+  		    		<h2 style="color:green;text-align:left">Platform Independent</h2>
+             			 You can Encrypt your files on one platform <br>and Decrypt on another platform.
+                  </div> 	
+                  
+				  <div class="centered">
+				     <h2 style="color:green;text-align:left">Collaboration</h2>
+			 				Allow other users to read your encrypted files with your key. 
+				   </div>
+				   </div>
    <%@include file="footer.jsp" %>
 </body>
 </html>

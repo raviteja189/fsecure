@@ -28,8 +28,8 @@
 <div class="topnav" style="background-color:black">
       <a class="special"><span style="color:darkgreen">FSecure<span><span style="color:lightgreen"> solutions</span></a>
 	  <a  href="home1.jsp">Home</a>
-	  <a href="about.jsp">About</a>
-	  <a href="privacy.jsp">Privacy</a>
+	  <a href="about1.jsp">About</a>
+	  <a href="privacy1.jsp">Privacy</a>
 	  <a href="startpage.jsp">Enc/Dec</a>
 	  	<div class="topnav-right">
 	  	
@@ -92,7 +92,7 @@
    <br><br>
    <marquee > File details will be removed once decrypted !</marquee>
    <div style="padding:30px">
-   <h2>Files you have Encrypted : </h2>
+   <h2>Files you have Encrypted : (file location is your first time file encrypted location)</h2>
    
    <table border="1" >
      <tr> 

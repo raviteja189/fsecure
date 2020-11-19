@@ -46,13 +46,13 @@ color:white;}
     <p class="a">&nbsp;&nbsp;&nbsp;a)AES 128-bit</p>
     <p class="a">&nbsp;&nbsp;&nbsp;b)DES 64-bit</p>
     <hr>
-    <p class="a">2)A random key will be generated at the moment to decrypt the file </p>
+    <p class="a">2)A random key will be generated at the moment to encrypt the file </p>
     <hr>
     <p class="a">3) After the encryption the filename,filepath and key will be sent to your email id </p>
     <hr>
     <p class="a">4) To decrpt the file use the same key sent to your email id </p>
     <hr>
-    <p class="a">5) After the file decryption the data from the database will be removed </p>
+    <p class="a">5) After the file decryption the data from the database will be removed and there is no chance to decrypt the file again</p>
     <hr>
     </div>
   </div>
